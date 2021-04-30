@@ -8,17 +8,17 @@ body{
 
             #logodiv{
               
-                width:100%;
+              
                 margin-top:5px;
               
-            width:100%;
+        
             }
             #logo1{
                 float:left;
                 animation-name: example10;
                 animation-duration: 5s;
-                animation-delay:11s;
-                
+                animation-delay:4s;
+                width:20%;
                      animation-fill-mode: both;
             
             
@@ -28,9 +28,9 @@ body{
                 float:right;
                 animation-name: example10;
                 animation-duration: 5s;
-            animation-delay:10s;
+            animation-delay:6s;
                      animation-fill-mode: both;
-            
+            width:20%;
                 
              
             
@@ -39,16 +39,15 @@ body{
                 margin-top: 2%;;
             }
             #logo2 img{
-                width:200px;
+                width:20px;
             }
-            #logodiv img{
-                width:200px;
+            #logo1 img{
+                width:20px;
             }
             #logo{
-                margin-left:15%;
-                margin-right: auto;
-
-                width:70%;
+                
+                margin-left:10%;
+                width:80%;
             }
         
 #loggerheading{
@@ -57,7 +56,7 @@ body{
     margin-right: auto;
 text-align: center;
 
-    font-size:7em;font-family: 'Roboto Condensed', sans-serif;
+    font-size:5em;font-family: 'Roboto Condensed', sans-serif;
     animation-name: slideIn;
     animation-duration: 5s;
          animation-fill-mode: both;
@@ -88,7 +87,8 @@ text-align: center;
 
 #bar{
     margin:0px;
-min-height: 400px;
+    overflow:hidden;
+margin-top:10%;
 animation-name: fadeIn;
     animation-duration: 10s;
      animation-delay: 3s;
@@ -117,18 +117,11 @@ animation-name: fadeIn;
     100% {opacity:1;}
  }
 
-
-        span{
-            color:white;
-        }
-
-
-
-#form{
+#form1{
     
     animation-name: example10;
     animation-duration: 2s;
-
+animation-delay:5s;
          animation-fill-mode: both;
 
 

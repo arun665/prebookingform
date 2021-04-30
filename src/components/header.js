@@ -51,9 +51,7 @@ function Header(){
  <div className="carousel-inner">
    <div className="carousel-item active">
      <img src={logger1} id="logo" alt="First slide"/>
-     <div class="carousel-caption">
-
-  </div>
+    
    </div>
    <div className="carousel-item">
      <img src={logger2} id="logo" alt="Second slide"/>
@@ -92,7 +90,7 @@ function Header(){
 
 <div className="col-sm-6 col-md-6 col-xs-12">
 
-<div id="form">
+<div id="form1">
 <Form/>
 </div>
 </div>
