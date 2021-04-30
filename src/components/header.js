@@ -31,7 +31,6 @@ function Header(){
                 <div   id="logodiv">
                     <img src={logo}  id="logo1" />
   
-                    <img src={iotlab} id="logo2"  />
 
                 </div>
         

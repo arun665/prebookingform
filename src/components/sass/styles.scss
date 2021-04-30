@@ -15,9 +15,6 @@ body{
             }
             #logo1{
                 float:left;
-                animation-name: example10;
-                animation-duration: 5s;
-                animation-delay:4s;
                 width:20%;
                      animation-fill-mode: both;
             
@@ -26,10 +23,6 @@ body{
             
             #logo2{
                 float:right;
-                animation-name: example10;
-                animation-duration: 5s;
-            animation-delay:6s;
-                     animation-fill-mode: both;
             width:20%;
                 
              
@@ -57,25 +50,12 @@ body{
 text-align: center;
 
     font-size:5em;font-family: 'Roboto Condensed', sans-serif;
-    animation-name: slideIn;
-    animation-duration: 5s;
-         animation-fill-mode: both;
-
+  
 
 }
 
 
-@keyframes slideIn{
-    0% {font-size:0px;}
-    100% {font-size:7em}
- }
 
- 
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
 
  h1{
     color:white;
@@ -89,10 +69,6 @@ text-align: center;
     margin:0px;
     overflow:hidden;
 margin-top:10%;
-animation-name: fadeIn;
-    animation-duration: 10s;
-     animation-delay: 3s;
-            animation-fill-mode: both;
 }
 
 #div1{
@@ -104,24 +80,15 @@ animation-name: fadeIn;
     color:white;
     font-size:3em;
     text-align: center;
-    animation-name: subheadinganimation;
-    animation-duration: 10s;
-    animation-delay: 3s;
-         animation-fill-mode: both;
-
-
+ 
 }
 
-@keyframes subheadinganimation{
-    0% {opacity:0;}
-    100% {opacity:1;}
- }
 
-#form1{
+#main{
     
     animation-name: example10;
-    animation-duration: 2s;
-animation-delay:5s;
+    animation-duration: 5s;
+
          animation-fill-mode: both;
 
 
