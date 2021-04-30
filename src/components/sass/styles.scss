@@ -2,139 +2,140 @@
 body{
                 margin:0px;
                 background-color: #1e242a;
+                font-family: 'Roboto Condensed', sans-serif;
 }
 
-            
-#main{
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                overflow: hidden;
-}
-            #box1{
-          
-                background-image:url('iotlab.png') ;
-                background-repeat: no-repeat;
-                position: absolute;
-                bottom:30%;
-                left:30%;
-                animation:anim 2s forwards,anim2 3s forwards 3s;
 
-            }
-            #box1:after{
-                content: '';
-                position: absolute;
-           
-                background-image:url('iotlab.png');
-                left:0px;   
-                z-index: -1;
-            }
-            @keyframes anim{
-                from{
-                    border-radius:400px;
-                    width: 10%;
-                height: 10%;
-                }
-                to{
-                    border-radius:10px;
-                    width: 28%;
-                height: 45%;                }
-            }
-            @keyframes anim2{
-                from{
-                    left: 30%;
-                    width: 28%;
-                    height: 45%;  
-                }
-                to{
-                    width: 28%;
-                    height: 45%;  
-                    left:60%;
-                }
-            }
-            #box2{
-                height: auto;
-                width:auto;
-                font-family: 'Bahnschrift Condensed';
-                color:white;
-                font-size:10em;
-                font-weight: 500;
-                line-height: 130px;
-                position: absolute;
-                top:250px;
-                left:100px;
-                overflow: hidden;
-            }
-            #text{
-                position: relative;
-                left:-100%;
-                animation: anim3 2s forwards 3s;
-            }
-
-
-
-            
-            @keyframes anim3{
-                from{
-                    left:-100%;
-                }
-                to{
-                    left:0%;
-                }
-            }
-            #box3{
-                overflow: hidden;
-            }
-            #container{
+            #logodiv{
+              
                 width:100%;
-                position: absolute;
-                top:-100%;
-                animation:anim4 2s forwards 2.5s;
+                margin-top:5px;
+              
+            width:100%;
             }
-            #logo{
+            #logo1{
                 float:left;
-                margin-left:100px;
-                margin-top:20px;
+                animation-name: example10;
+                animation-duration: 5s;
+                animation-delay:11s;
+                
+                     animation-fill-mode: both;
+            
+            
             }
-            #logo img{
+            
+            #logo2{
+                float:right;
+                animation-name: example10;
+                animation-duration: 5s;
+            animation-delay:10s;
+                     animation-fill-mode: both;
+            
+                
+             
+            
+            }
+            #div2{
+                margin-top: 2%;;
+            }
+            #logo2 img{
                 width:200px;
             }
-            #menu{
-                font-family: 'Bahnschrift Condensed';
-                font-size: 14px;
-                color:white;
-                letter-spacing: 2px;
-                margin-right: 150px;
-                margin-top:20px;
-                float:right;
+            #logodiv img{
+                width:200px;
             }
-            #menu ul{
-                list-style: none;
-            }
-            #menu ul li{
-                display: inline-block;
-                margin-left:100px;
-            }
-            @keyframes anim4{
-                from{
-                    top:-100%;
-                }
-                to{
-                    top:0%;
-                }
-            }
+            #logo{
+                margin-left:15%;
+                margin-right: auto;
 
-            #formbutton{
-                background-color:  #1e242a;
-                color:white;
-                border:1px solid white;
-                transition:1s;
-                font-size:0.2em;
+                width:70%;
             }
+        
+#loggerheading{
+    margin-left:auto;
+    bottom:10px;
+    margin-right: auto;
+text-align: center;
 
-            #formbutton:hover{
-                background: #00EEEE;
+    font-size:7em;font-family: 'Roboto Condensed', sans-serif;
+    animation-name: slideIn;
+    animation-duration: 5s;
+         animation-fill-mode: both;
+
+
+}
+
+
+@keyframes slideIn{
+    0% {font-size:0px;}
+    100% {font-size:7em}
+ }
+
+ 
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ h1{
+    color:white;
+}
+
+.container{
+    margin-bottom:0px;
+}
+
+#bar{
+    margin:0px;
+min-height: 400px;
+animation-name: fadeIn;
+    animation-duration: 10s;
+     animation-delay: 3s;
+            animation-fill-mode: both;
+}
+
+#div1{
+    height:5%;
+    margin-bottom:0px;
+}
+
+#loggersubheading{
+    color:white;
+    font-size:3em;
+    text-align: center;
+    animation-name: subheadinganimation;
+    animation-duration: 10s;
+    animation-delay: 3s;
+         animation-fill-mode: both;
+
+
+}
+
+@keyframes subheadinganimation{
+    0% {opacity:0;}
+    100% {opacity:1;}
+ }
+
+
+        span{
+            color:white;
+        }
+
+
+
+#form{
     
-            }
+    animation-name: example10;
+    animation-duration: 2s;
 
+         animation-fill-mode: both;
+
+
+}
+
+@keyframes example10{
+    0% {opacity:0;}
+100%  {opacity: 1;}
+}
         

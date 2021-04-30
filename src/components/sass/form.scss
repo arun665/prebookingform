@@ -1,0 +1,100 @@
+#form{
+
+    animation-name: example10;
+    animation-duration: 10s;
+animation-delay:10s; 
+
+
+    form{
+margin-top: 0px;
+        border:1px solid white;
+        padding-left:4%;
+        padding-right:4%;
+        padding-bottom:4%;
+        
+        
+        ;
+        width:70%;
+        border-radius:20px;
+        margin-left: auto;
+        margin-right: auto;
+        animation-name: example;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+        0% {border-color: red;box-shadow: 10px 10px 50px red;}
+        25% {border-color: yellow;box-shadow: 10px 10px 50px yellow;}
+        50% {border-color: yellowgreen;box-shadow: 10px 10px 50px yellowgreen}
+        75% {border-color: lightblue;box-shadow: 10px 10px 50px lightblue}
+        100% {border-color: red;box-shadow: 10px 10px 50px red}
+      
+    
+    }
+
+    #inputfield{
+        padding:0px;
+
+    }
+    input{
+        border:0px solid white;
+        border-bottom:2px solid white;
+        background-color: #1e242a;
+        color:white;
+        font-size: 2em;
+        padding:3px;
+        height:50px;
+        animation-name: example2;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes example2 {
+        0% {border-color: red;}
+        25% {border-color: yellow;}
+        50% {border-color: yellowgreen;}
+        75% {border-color: lightblue;}
+        100% {border-color: red;}
+      
+    
+    }
+    input:hover{
+        border:0px solid white;
+        border:2px solid lightgreen;
+        background-color: black;;
+        color:white;
+        
+    }
+  #btn{
+      height:50px;
+      font-size:20px;
+      text-align: center;
+      vertical-align: middle;
+      animation-name: example3;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes example3 {
+    0% {border-color: red;}
+    25% {border-color: yellow;}
+    50% {border-color: yellowgreen;}
+    75% {border-color: lightblue;}
+    100% {border-color: red;}
+  
+
+}
+      
+}
+
+
+
+
+
+@keyframes example10 {
+    0% {opacity: 0;}
+    100% {opacity:1;}
+  
+
+}
