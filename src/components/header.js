@@ -81,7 +81,7 @@ function Header(){
      <h1  id="loggerheading">TEMPERATURE LOGGER</h1>
      
      <p id="loggersubheading"><Typical
-        steps={['automatically records temperature continously', 1000, 'easy to retrieve data', 1000, 'automatically generates alert ',1000]}
+        steps={['automatically records temperature continuously', 1000, 'easy to retrieve data', 1000, 'automatically generates alert ',1000]}
         loop={Infinity}
         wrapper="p"
       /></p>
