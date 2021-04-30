@@ -8,7 +8,7 @@ function Form(){
 return <>
 <div id="form">
 
-
+<h1 id="formheading"> PRE_BOOKING FORM</h1>
 <form action="">
 <div class="form-group" id="inputfield">
     <label for="email">Name:</label>
