@@ -4,10 +4,8 @@
 
     form{
 margin-top: 0px;
-        border:1px solid white;
-        padding-left:4%;
-        padding-right:4%;
-        padding-bottom:4%;
+        border:3px solid white;
+     padding:6%;
         
         
      
@@ -15,19 +13,25 @@ margin-top: 0px;
         border-radius:20px;
         margin-left: auto;
         margin-right: auto;
-       
-    
+        background: rgba(255,255,255,.4);
+        border: 2px solid;
+        border-top-color: rgba(255,255,255,1);
+        border-left-color: rgba(255,255,255,1);
+        border-bottom-color: rgba(255,255,255,0.2);
+        border-right-color: rgba(255,255,255,0.2);
     }
 
 
     #inputfield{
-        padding:0px;
+        padding:2px;
+        border:0px solid black;
+          margin-bottom:3%;
 
     }
     input{
-        border:0px solid white;
+        border:0px solid rgba(255,255,255,.4); ;
         border-bottom:2px solid white;
-        background-color: black;
+    	background: transparent;
         color:white;
         font-size: 2em;
         padding:3px;
@@ -35,10 +39,15 @@ margin-top: 0px;
       
         
     }
+    ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+      }
+      
     input:hover{
         border:0px solid white;
-        border:2px solid lightgreen;
-        background-color: black;;
+        border-bottom:2px solid lightgreen;
+       
         color:white;
         
     }
@@ -46,25 +55,26 @@ margin-top: 0px;
       height:50px;
       font-size:20px;
       text-align: center;
-      vertical-align: middle;
-     
+      color:white;
+      border-color:white;
+    
+    margin-top:3%; 
   }
 
-
+#scratchnestlogo{
+    margin-top:5%;
+    width:200px;
+    bottom:10px;
+    float:right;
+    margin-right:15%;
+}
 #formheading{
     text-align:center;
     font-size:4em;
+    
 }
 
 }
 
 
 
-
-
-@keyframes example10 {
-    0% {opacity: 0;}
-    100% {opacity:1;}
-  
-
-}

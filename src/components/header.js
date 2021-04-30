@@ -7,7 +7,7 @@ import iotlab from "./sass/iotlabdark.png"
 import './sass/loader.scss';
 import './sass/loader.js';
 import logo from './sass/logo.png';
-import background from './sass/background.png';
+import background from './sass/background.jpg';
 
 import logger1 from './sass/logger1.png';
 import logger2 from './sass/logger2.png';
@@ -39,7 +39,7 @@ function Header(){
 
 
 
-        <div className="containerFluid" id="div2">
+        <div  id="div2">
 
 
 <div className="row">
@@ -50,10 +50,10 @@ function Header(){
 </div>
 <div className="col-sm-6 col-md-6 col-xs-12">
 
-<div id="form1">
 
 <Form/>
-</div>
+
+
 </div>
 
 
