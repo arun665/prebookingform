@@ -47,7 +47,7 @@ return <>
   
 
   <button id="btn" type="submit" class="icon">Submit</button>
-   <button id="btn2" onClick={window.open(' https://scratchnest-ff76c.web.app/', '_blank')}  class="icon">  TEMPERATURE LOGGER</button>
+   <button id="btn2" onClick={()=>window.open(' https://scratchnest-ff76c.web.app/', '_blank')}  class="icon">  TEMPERATURE LOGGER</button>
   
   
   
