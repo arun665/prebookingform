@@ -2,6 +2,7 @@ import react from 'react';
 
 import './sass/form.scss';
 import logo from './sass/logo.png';
+import awadh from './sass/awadh.png';
 
 
 function Form(){
@@ -49,11 +50,9 @@ return <>
   
 
 </form>
+<img src={logo} id="scratchnestlogo"/> 
 
 
-<div >
-  <img src={logo} id="scratchnestlogo"/>
-</div>
 </div></>
 
 

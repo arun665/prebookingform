@@ -27,28 +27,25 @@ function Header(){
 
  
 
-            <div className="container" id="div1">
         
-                <div   id="logodiv">
-                    <img src={iotlab}  id="logo1" />
-  
-
-                </div>
-        
-            </div>
-
 
 
         <div  id="div2">
 
 
 <div className="row">
-<div className="col-sm-6 col-md-6 col-xs-12">
+<div className="col-sm-12 col-md-6 col-xs-12">
+
+<div   id="logodiv">
+                    <img src={iotlab}  id="logo1" />
+  
+                </div>
+        
 
 <img src={background} id="bar"/>
 
 </div>
-<div className="col-sm-6 col-md-6 col-xs-12">
+<div className="col-sm-12 col-md-6 col-xs-12">
 
 
 <Form/>
