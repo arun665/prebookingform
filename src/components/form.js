@@ -13,7 +13,7 @@ function Form(){
 return <>
 <div id="form">
 
-<h1 id="formheading"> PRE-BOOKING FORM</h1>
+<h1 id="formheading"> Pre-Booking Form</h1>
 <form action="">
 <div class="form-group" id="inputfield">
  

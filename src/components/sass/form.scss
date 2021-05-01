@@ -162,10 +162,10 @@ margin-top: 0px;
 #scratchnestlogo{
 
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 10px;
   
-width:30%;
+width:40%;
   }
   
 
@@ -184,15 +184,5 @@ width:30%;
 
 
 }
-
-
-@media screen and  (max-device-width : 576px) {
- 
- body{
-     background-color: green;
- }
-    /* Styles */
-}
-
 
 }
