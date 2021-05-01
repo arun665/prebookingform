@@ -28,7 +28,7 @@ return <>
   
   <div class="form-group" id="inputfield">
   
-    <input type="email" class="form-control" placeholder="phone number" id="email"/>
+    <input type="email" class="form-control" placeholder="Phone number" id="email"/>
   </div>
   
   <div class="form-group" id="inputfield">
