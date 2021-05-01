@@ -1,6 +1,8 @@
 import react from 'react';
 
 import './sass/form.scss';
+import './sass/formandroid.scss';
+
 import logo from './sass/logo.png';
 import awadh from './sass/awadh.png';
 

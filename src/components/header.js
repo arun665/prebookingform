@@ -1,5 +1,8 @@
 import react from 'react';
 import "./sass/styles.scss";
+import "./sass/stylesandroid.scss";
+import "./sass/stylestablet.scss";
+
 import Typical from 'react-typical'
  
 

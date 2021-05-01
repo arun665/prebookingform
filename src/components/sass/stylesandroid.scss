@@ -1,0 +1,134 @@
+@media screen and (max-width: 576px) {
+   
+
+body{
+    margin:0px;
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html, body {
+margin:0px;
+height:100%;
+}
+
+#scratchnestlogo{
+
+position: absolute;
+bottom: 0;
+right: 0;
+
+width: 200px;
+height: 100px;
+
+}
+
+#logodiv{
+  
+  
+    margin-top:5px;
+  
+
+}
+#logo1{
+    float:left;
+    width:50%;
+         animation-fill-mode: both;
+
+
+}
+
+#logo2{
+    float:right;
+
+    
+font-size:5em;
+
+}
+
+#bar{
+  
+    height:70vh;
+    width:90%;
+    margin-left: 5%;
+    margin-right: auto;
+
+ 
+  
+}
+
+#div2{
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+    height:100%;
+    bottom:0px;
+    
+}
+#logo2 img{
+    width:20px;
+}
+#logo1 img{
+    width:20px;
+}
+#logo{
+    
+    margin-left:10%;
+    width:80%;
+}
+
+#loggerheading{
+margin-left:auto;
+bottom:10px;
+margin-right: auto;
+text-align: center;
+
+font-size:5em;font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+
+
+
+h1{
+color:white;
+}
+
+.container{
+margin-bottom:0px;
+}
+
+
+#div1{
+height:5%;
+margin-bottom:0px;
+}
+
+#loggersubheading{
+color:white;
+font-size:3em;
+text-align: center;
+
+}
+
+
+#main{
+
+animation-name: example10;
+animation-duration: 5s;
+
+animation-fill-mode: both;
+
+
+
+}
+
+
+@keyframes example10{
+0% {opacity:0;}
+100%  {opacity: 1;}
+}
+
+
+}
