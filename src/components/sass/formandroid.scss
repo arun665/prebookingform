@@ -1,92 +1,190 @@
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px)  {
    
 
+    #form{
+    
+    
+    margin-top:10%;
+        form{
 
-#form{
-
-
-
-    form{
-margin-top: 0px;
-        border:3px solid white;
-     padding:6%;
+    margin-top: 0px;
+         padding:6%;
+            
+            
+         
+            width:95%;
+            height:70vh;
+            border-radius:20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:40%;
+            
+        }
+    
+    
+        #inputfield{
+            padding:2px;
+            border:0px solid black;
+              margin-bottom:3%;
+    
+        }
+        legend{
+            text-align: center;
+        }
+        input{
+            border:0px solid rgba(255,255,255,.4); ;
+            border-bottom:2px solid  rgba(255,255,255,.4);
+            background: transparent;
+            color:white;
+            font-size: 15px;;
+            padding:3px;
+            height:50px;
+          
+            
+        }
+    
+        ::placeholder {
+            color:  rgba(255,255,255,.4);
+            opacity: 1; /* Firefox */
+          }
+        
+          
+          :hover::placeholder  {
+            color:  rgba(255,255,255,1);
+            opacity: 1; /* Firefox */
+          }
         
         
-     
- width:100%;
-        border-radius:20px;
-        margin-left: auto;
-        margin-right: auto;
         
-        background: rgba(255,255,255,.4);
-        border: 2px solid;
-        border-top-color: rgba(255,255,255,1);
-        border-left-color: rgba(255,255,255,1);
-        border-bottom-color: rgba(255,255,255,0.2);
-        border-right-color: rgba(255,255,255,0.2);
-        box-shadow: 10px 10px  10px rgba(255,255,255,0.6);
-    margin-bottom:40%;
-    }
-
-
-    #inputfield{
-        padding:2px;
-        border:0px solid black;
-          margin-bottom:3%;
-
-    }
-    legend{
-        text-align: center;
-    }
-    input{
-        border:0px solid rgba(255,255,255,.4); ;
-        border-bottom:2px solid white;
-    	background: transparent;
+        input:hover{
+            border:0px solid white;
+            border-bottom:2px solid white;
+           
+    
+            color:white;
+            
+        }
+      #btn{
+          height:50px;
+          font-size:15px;
+          text-align: center;
+          color:rgba(255,255,255,.4);
+          border-color:rgba(255,255,255,.4);
+          background-color: black;
+     float:left;
+        margin-top:3%; 
+      }
+    
+      #btn:hover{
         color:white;
-        font-size: 25px;;
-        padding:3px;
-        height:50px;
+        border:2px solid white;
       
-        
-    }
-    ::placeholder {
-        color: white;
-        opacity: 1; /* Firefox */
+      }
+    
+    
+      #btn2{
+        height:50px;
+        font-size:15px;
+        text-align: center;
+        color:rgba(255,255,255,.4);
+        border-color:rgba(255,255,255,.4);
+     float:right; 
+     background-color: black;
+      margin-top:3%; 
+       
+      }
+    #btn2:hover{
+        color:white;
+        border:2px solid white;
+      
       }
       
-    input:hover{
-        border:0px solid white;
-        border-bottom:2px solid lightgreen;
-       
-        color:white;
+      
+    .icon {
+      position: relative;
+      overflow: hidden;
+    
+      display: inline-block;
+      
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      font-size: 12px;
+      
+    }
+    
+    /**
+     * The "shine" element
+     */
+    
+    .icon:after {
+      content: "";
+      position: absolute;
+      top: -110%;
+      left: -210%;
+      width: 200%;
+      height: 200%;
+      opacity: 0;
+      transform: rotate(30deg);
+      
+      background: black;
+      background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.13) 0%,
+        rgba(255, 255, 255, 0.13) 77%,
+        rgba(255, 255, 255, 0.5) 92%,
+        rgba(255, 255, 255, 0.0) 100%
+      );
+    }
+    
+    /* Hover state - trigger effect */
+    
+    .icon:hover:after {
+      opacity: 1;
+      top: -30%;
+      left: -30%;
+      transition-property: left, top, opacity;
+      transition-duration: 0.7s, 0.7s, 0.15s;
+      transition-timing-function: ease;
+    }
+    
+    /* Active state */
+    
+    .icon:active:after {
+      opacity: 0;
+    }
+    
+    
+    
+    
+    
+      
+    #formheading{
+        margin-bottom:5%;
+        text-align:center;
+        font-size:3em;
         
     }
-  #btn{
-      height:50px;
-      font-size:20px;
-      text-align: center;
-      color:white;
-      border-color:white;
     
-    margin-top:3%; 
-  }
-
-
-#formheading{
-    margin-bottom:5%;
-margin-left:auto;
-margin-right: auto;
-    font-size:4em;
-    text-align: center;
     
-}
+#scratchnestlogo{
 
-
-
-/* Smartphones (portrait and landscape) ----------- */
-
-
-}
-
+    position: absolute;
+    bottom: 0;
+    right: 1;
+    
+    width: 150px;
+    height: 100px;
+    
+    }
+    
+    
+    
+    /* Smartphones (portrait and landscape) ----------- */
+    
+    
+    }
 }

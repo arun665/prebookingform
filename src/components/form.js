@@ -3,6 +3,8 @@ import react from 'react';
 import './sass/form.scss';
 import './sass/formandroid.scss';
 
+import './sass/formtablet.scss';
+
 import logo from './sass/logo.png';
 import awadh from './sass/awadh.png';
 
@@ -44,7 +46,8 @@ return <>
   
   
 
-  <button id="btn" type="submit" class="btn btn-outline-secondary">Submit</button>
+  <button id="btn" type="submit" class="icon">Submit</button>
+  <button id="btn2" type="submit" class="icon">TEMPERATURE LOGGER</button>
 
   
   

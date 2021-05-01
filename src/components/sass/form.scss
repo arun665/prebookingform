@@ -69,7 +69,8 @@ margin-top: 0px;
       text-align: center;
       color:rgba(255,255,255,.4);
       border-color:rgba(255,255,255,.4);
-    
+      background-color: black;
+ float:left;
     margin-top:3%; 
   }
 
@@ -80,6 +81,85 @@ margin-top: 0px;
   }
 
 
+  #btn2{
+    height:50px;
+    font-size:20px;
+    text-align: center;
+    color:rgba(255,255,255,.4);
+    border-color:rgba(255,255,255,.4);
+ float:right; 
+ background-color: black;
+  margin-top:3%; 
+   
+  }
+#btn2:hover{
+    color:white;
+    border:2px solid white;
+  
+  }
+  
+  
+.icon {
+  position: relative;
+  overflow: hidden;
+
+  display: inline-block;
+  
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  
+}
+
+/**
+ * The "shine" element
+ */
+
+.icon:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: black;
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+
+.icon:active:after {
+  opacity: 0;
+}
+
+
+
+
+
+  
 #formheading{
     margin-bottom:5%;
     text-align:center;
