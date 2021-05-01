@@ -4,27 +4,24 @@
 
 #form{
 
-  line-height: 100vh;
-
     form{
 margin-top: 0px;
-     padding:6%;
+     padding:3%;
         
-        
+        width:70%;;
+        height:100%;
      
-        width:60vh;
-        height: 70vh;
         border-radius:20px;
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;
         margin-right: auto;
         vertical-align: middle;
-        border:2px solid rgba(255,255,255,.4);
-
+      
+padding-bottom:5%;
     }
     form:hover{
-      border:2px solid white;
+    
     }
 
 
@@ -169,8 +166,8 @@ margin-top: 0px;
 #scratchnestlogo{
 
   position: absolute;
-  bottom: 5px;
-  right: 10px;
+  bottom: 0px;
+  right: 0px;
   
 width:40%;
   }
@@ -184,6 +181,23 @@ height:5%;
     
 }
 
+
+body { 
+  min-height: 100vh;   
+  display: flex;
+  /* Horizontal centering (main axis): */  
+  justify-content: center;  
+  /* Vertical centering (cross axis): */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-centered {  
+  padding: 2em;
+  background: #ddd;
+  max-width: 50%;
+}
 
 
 

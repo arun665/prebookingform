@@ -12,9 +12,11 @@ import awadh from './sass/awadh.png';
 function Form(){
 return <>
 <div id="form">
-
+<div>
 <h1 id="formheading"> Pre-Booking Form</h1>
+</div>
 <form action="">
+
 <div class="form-group" id="inputfield">
  
     <input type="email" class="form-control" placeholder="Name" id="email"/>
@@ -45,18 +47,16 @@ return <>
   </div>
   
   
-
+<div class="form-group" id="inputfield">
   <button id="btn" type="submit" class="icon">Submit</button>
    <button id="btn2" onClick={()=>window.open(' https://scratchnest-ff76c.web.app/', '_blank')}  class="icon">  TEMPERATURE LOGGER</button>
-  
+  </div>
   
   
   
 
 </form>
  
-<img src={logo} id="scratchnestlogo"/> 
-
 
 </div></>
 
