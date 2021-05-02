@@ -10,7 +10,7 @@ import awadh from './sass/awadh.png';
 import {useState} from 'react';
 import {connect} from "react-redux";
 import {addFormData} from "../redux/action/formdata.js";
-
+import {NavLink} from "react-router-dom";
 
 function Form(props){
 
@@ -65,7 +65,7 @@ return <>
   
   <div class="form-group" id="inputfield">
   
-    <input type="tel" className="form-control" placeholder="Phone number" onChange={e=>setNumber(e.target.value)} maxlength="10" minlength="10"  value={number} id="email"/>
+    <input type="tel" className="form-control" placeholder="Phone number" onChange={e=>setNumber(e.target.value)}   value={number} id="email"/>
   </div>
   
   <div class="form-group" id="inputfield">
@@ -78,7 +78,7 @@ return <>
   </div>
   <div class="form-group" id="inputfield">
   
-    <input type="email" className="form-control" placeholder="Shipping address" onChange={e=>setAddress(e.target.value)} value={address} id="email"/>
+    <input type="text" className="form-control" placeholder="Shipping address" onChange={e=>setAddress(e.target.value)} value={address} id="email"/>
   </div>
   
   
