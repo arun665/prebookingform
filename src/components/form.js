@@ -7,49 +7,84 @@ import './sass/formtablet.scss';
 
 import logo from './sass/logo.png';
 import awadh from './sass/awadh.png';
+import {useState} from 'react';
+import {connect} from "react-redux";
+import {addFormData} from "../redux/action/formdata.js";
 
 
-function Form(){
+function Form(props){
+
+  const [name,setName]=useState('');
+  const [email,setEmail]=useState('');
+  const [number,setNumber]=useState('');
+  const [company,setCompany]=useState('');
+  const [quantity,setQuantity]=useState('');
+  const [address,setAddress]=useState('');
+
+  const handlesubmit=(event)=>{
+    event.preventDefault();
+    setName('');
+    setEmail('');
+    setNumber('');
+    setCompany('');
+    setQuantity('');
+    setAddress('');
+    
+    
+  }
+  var message=props.message;
+  console.log(message);
+
+  var msg;
+ if(message==="Booking Successfull"){
+    msg= (<div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h2>
+    Booking Successfull</h2>
+  </div>)
+ }
+
+
 return <>
-<div id="form">
+<div id="form" onSubmit={handlesubmit}>
 <div>
 <h1 id="formheading"> Pre-Booking Form</h1>
 </div>
 <form action="">
-
+{msg}
 <div class="form-group" id="inputfield">
  
-    <input type="email" class="form-control" placeholder="Name" id="email"/>
+    <input type="text" className="form-control" placeholder="Name" onChange={e=>setName(e.target.value)} value={name} id="email" required/>
   </div>
   
 
   <div class="form-group" id="inputfield">
 
-    <input type="email" class="form-control" placeholder="Enter email" id="email"/>
+    <input type="email" className="form-control" placeholder="Enter email" onChange={e=>setEmail(e.target.value)} value={email} id="email" required/>
   </div>
   
   <div class="form-group" id="inputfield">
   
-    <input type="email" class="form-control" placeholder="Phone number" id="email"/>
+    <input type="tel" className="form-control" placeholder="Phone number" onChange={e=>setNumber(e.target.value)} maxlength="10" minlength="10"  value={number} id="email"/>
   </div>
   
   <div class="form-group" id="inputfield">
   
-    <input type="email" class="form-control" placeholder="Company name" id="email"/>
+    <input type="text" className="form-control" placeholder="Company name" onChange={e=>setCompany(e.target.value)} value={company} id="email"/>
   </div>
   <div class="form-group" id="inputfield">
   
-    <input type="email" class="form-control" placeholder="Quantity" id="email"/>
+    <input type="number" className="form-control" placeholder="Quantity" onChange={e=>setQuantity(e.target.value)} value={quantity} id="email"/>
   </div>
   <div class="form-group" id="inputfield">
   
-    <input type="email" class="form-control" placeholder="Shipping address" id="email"/>
+    <input type="email" className="form-control" placeholder="Shipping address" onChange={e=>setAddress(e.target.value)} value={address} id="email"/>
   </div>
   
   
 <div class="form-group" id="inputfield">
-  <button id="btn" type="submit" class="icon">Submit</button>
-   <button id="btn2" onClick={()=>window.open(' https://scratchnest-ff76c.web.app/', '_blank')}  class="icon">  TEMPERATURE LOGGER</button>
+  <button id="btn" type="submit" onClick={()=>props.addFormData(name,email,company,number,quantity,address)} className="icon">Submit</button>
+   <button id="btn2" onClick={()=>window.open(' https://scratchnest-ff76c.web.app/', '_blank')}  className="icon">  TEMPERATURE LOGGER</button>
   </div>
   
   
@@ -57,10 +92,45 @@ return <>
 
 </form>
  
+<img src={logo} id="scratchnestlogo"/> 
+
 
 </div></>
 
 
 }
 
-export default Form;
+
+
+const mapStatetoProps=(state)=>{
+
+  return{
+      name:state.pass.name,
+      email:state.pass.email,
+      comapny:state.pass.company,
+number:state.pass.number,
+quantity:state.pass.quantity,
+address:state.pass.address,
+message:state.pass.message
+
+
+
+    
+  }
+}
+
+
+const mapDispatchtoProps=(dispatch)=>{
+return{
+  addFormData:function(name,email,company,number,quantity,address){
+   dispatch(addFormData(name,email,company,number,quantity,address));
+  }
+}
+}
+
+export default connect(mapStatetoProps,mapDispatchtoProps)(Form);
+
+
+
+
+
