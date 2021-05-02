@@ -84,7 +84,6 @@ return <>
   
 <div class="form-group" id="inputfield">
   <button id="btn" type="submit" onClick={()=>props.addFormData(name,email,company,number,quantity,address)} className="icon">Submit</button>
-   <button id="btn2" onClick={()=>window.open(' https://scratchnest-ff76c.web.app/', '_blank')}  className="icon">  TEMPERATURE LOGGER</button>
   </div>
   
   

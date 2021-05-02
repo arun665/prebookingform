@@ -39,8 +39,8 @@ function Header(){
 <div className="row">
 <div className="col-sm-12 col-md-6 col-xs-12">
 
-<div   id="logodiv">
-                    <img src={iotlab}  id="logo1" />
+<div   id="logodiv" >
+                    <img src={iotlab}  id="logo1" onClick={()=>window.open('http://scratchnest.com/', '_blank')}/>
   
                 </div>
         
