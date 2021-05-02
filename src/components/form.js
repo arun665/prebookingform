@@ -92,7 +92,6 @@ return <>
 
 </form>
  
-<img src={logo} id="scratchnestlogo"/> 
 
 
 </div></>
@@ -127,6 +126,8 @@ return{
   }
 }
 }
+
+//<img src={logo} id="scratchnestlogo"/> 
 
 export default connect(mapStatetoProps,mapDispatchtoProps)(Form);
 
