@@ -50,6 +50,7 @@ function Header(){
 </div>
 <div className="col-sm-12 col-md-6 col-xs-12 flex-container" >
 
+
 <div className="vertical-centered" >
 <Form/>
 </div>
